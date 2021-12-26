@@ -1,0 +1,85 @@
+﻿
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutNoFooter.cshtml";
+}
+
+<h3 class="h3">Cart</h3>
+
+<div class="row">
+    <div class="col-12">
+        <div class="table">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col"> </th>
+                        <th scope="col">Produkt</th>
+                        <th scope="col">Verfuegbar</th>
+                        <th scope="col" class="text-center">Menge</th>
+                        <th scope="col" class="text-right">Preis</th>
+                        <th> </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
+                        <td>Produkt Name Dada</td>
+                        <td>Im Lager</td>
+                        <td><input class="form-control" type="text" value="1" /></td>
+                        <td class="text-right">euro 124.90</td>
+                        <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
+                        <td>ProduKt Name Toto</td>
+                        <td>Im Lager</td>
+                        <td><input class="form-control" type="text" value="1" /></td>
+                        <td class="text-right">euro 33.90</td>
+                        <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                    </tr>
+                    <tr>
+                        <td><img src="https://dummyimage.com/50x50/55595c/fff" /> </td>
+                        <td>Produkt Name Titi</td>
+                        <td>Im Lager</td>
+                        <td><input class="form-control" type="text" value="1" /></td>
+                        <td class="text-right">euro 70.00</td>
+                        <td class="text-right"><button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i> </button> </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Zwischen-Summe</td>
+                        <td class="text-right">euro 255.90</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>Versenden</td>
+                        <td class="text-right">euro 6.90</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td><strong>Summe</strong></td>
+                        <td class="text-right"><strong>euro 346.90</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-4 col-lg-offset-1">
+        <a href='@Url.Action("Index", "Product")' class="btn btn-primary btn-lg btn-block" role="button">Weiter Shoppen</a>
+    </div>
+    <div class="col-lg-4 col-lg-offset-2">
+        <a class="btn btn-lg btn-block btn-success text-uppercase" role="button">Ausloggen</a>
+    </div>
+</div>
